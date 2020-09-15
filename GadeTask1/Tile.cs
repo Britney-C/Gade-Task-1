@@ -7,8 +7,29 @@ namespace GadeTask1
 	//Question 2.1
 	abstract class Tile
 	{
-		protected int X { get; set; }
-		protected int Y { get; set; }
+		protected int X 
+		{
+			get
+			{
+				return X;
+			}
+			set
+			{
+
+			}
+		}
+
+		protected int Y
+		{
+			get
+			{
+				return Y;
+			}
+			set
+			{
+
+			}
+		}
 
 		public enum TileType
 		{

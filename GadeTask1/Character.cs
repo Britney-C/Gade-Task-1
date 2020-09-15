@@ -7,10 +7,21 @@ namespace GadeTask1
 	//Question 2.2 : This is an abstract base class and it inherits from Tile. This is the true base class for your Hero and Goblin classes.
 	abstract class Character : Tile
 	{
-		protected int[,] characterVisionArray = {};
+		protected int[,] characterVisionArray;
+		internal object characterDamaged;
+
 		protected int HP { get; set; }
 		protected int maxHP { get; set; }
 		protected int damage { get; set; }
+
+		public int[,] getVision()
+		{
+			return characterVisionArray;
+		}
+		public void setVision()
+		{
+
+		}
 
 		public Character(int positionX, int positionY)
 		{
@@ -20,14 +31,14 @@ namespace GadeTask1
 
 		public enum Movement
 		{
-			No_movement,
-			Up = ConsoleKey.UpArrow,
-			Down = ConsoleKey.DownArrow,
-			Left = ConsoleKey.LeftArrow,
-			Right = ConsoleKey.RightArrow
+			No_movement = 0,
+			Up = 1,
+			Down = 2,
+			Left = 3,
+			Right = 4
 		}
 
-		//Question 2.3 :  The Character class contains the following methods, most of which define generic implementations for all characters to use.
+		//Question 2.3 : Character class contains the following methods, most of which define generic implementations for all characters to use.
 		public virtual void Attack(Character target)
 		{
 			target.HP -= damage;
@@ -77,16 +88,12 @@ namespace GadeTask1
 					break;
 
 				default:
-					X = X;
-					Y = Y;
 					break;
 			}
 		}
 
-		public abstract override ToString()
-		{
-
-		}
+		public abstract Movement ReturnMove(Movement move = 0);
+		public abstract override string ToString();
 
 	}
 }

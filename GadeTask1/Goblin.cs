@@ -7,18 +7,17 @@ namespace GadeTask1
     class Goblin : Enemy
     {
         //Question 2.5 : Concrete Goblin class which inherits Enemy.
-
-        protected int[,] enemyVisionArray = { };
-
         public Goblin(int _X, int _Y, int enemyHP = 10, int enemyDamage = 1) : base(enemyHP, enemyDamage, _X, _Y, "Goblin", 'G')
         {
         }
 
-        public virtual Tile ReturnMove(Movement random)
+        public override Movement ReturnMove(Movement move = Movement.No_movement)
         {
-            return null;
+            int[] values = (int[])Enum.GetValues(typeof(Character.Movement));
+            Random random = new Random();
+            Movement movement = (Movement)(values.GetValue(random.Next(values.Length)));
+            
+            return movement;
         }
-
-        //public override string ReturnMove()
     }
 }

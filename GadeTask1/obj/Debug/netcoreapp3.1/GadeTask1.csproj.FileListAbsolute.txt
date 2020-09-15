@@ -1,0 +1,11 @@
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\obj\Debug\netcoreapp3.1\GadeTask1.csprojAssemblyReference.cache
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\obj\Debug\netcoreapp3.1\GadeTask1.AssemblyInfoInputs.cache
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\obj\Debug\netcoreapp3.1\GadeTask1.AssemblyInfo.cs
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.exe
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.deps.json
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.runtimeconfig.json
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.runtimeconfig.dev.json
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.dll
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\bin\Debug\netcoreapp3.1\GadeTask1.pdb
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\obj\Debug\netcoreapp3.1\GadeTask1.dll
+C:\Users\Britney\Desktop\Uni\4 - Game Dev (GADE)\POE - S2\Task 1\GadeTask1\GadeTask1\obj\Debug\netcoreapp3.1\GadeTask1.pdb

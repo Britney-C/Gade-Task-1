@@ -6,7 +6,16 @@ namespace GadeTask1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //if (!(Console.KeyAvailable && Console.ReadKey(true).Key != ConsoleKey.UpArrow))
+            //{
+            //    Console.WriteLine("It works");
+            //}
+            ConsoleKeyInfo x = new ConsoleKeyInfo();
+            while (x.KeyChar != 'w')
+            {
+                x = Console.ReadKey();
+            }
+            Console.Read();
         }
     }
 }

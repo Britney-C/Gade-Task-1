@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace GadeTask1
 {
@@ -27,13 +29,25 @@ namespace GadeTask1
 
             mapArray = new Tile[mapWidth, mapHeight];
             numEnemies = new Enemy[(mapWidth + mapHeight) / 3];
+            for(int i =0; i < numEnemies.Count(); i++)
+            {
+                numEnemies[i] = (Enemy)Create(type: Tile.TileType.Hero);
+            }
+
             UpdateVision();
             newHero = (Hero)Create(type: Tile.TileType.Hero);
         }
 
         public void UpdateVision()
         {
-
+            Tile tempTile;
+            foreach (Goblin temp in numEnemies) 
+            {
+                for (int i = -1; i < 2; i++)
+                {
+                    
+                }
+            }
         }
 
         private Tile Create(Tile.TileType type)
@@ -45,7 +59,7 @@ namespace GadeTask1
             switch (type)
             {
                 case Tile.TileType.Hero:
-                    tempTile = new Hero();
+                    tempTile = new Hero(randomX, randomY);
                     break;
                 case Tile.TileType.Enemy:
                     tempTile = new Goblin(randomX, randomY);
