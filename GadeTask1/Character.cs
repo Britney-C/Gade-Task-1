@@ -82,5 +82,11 @@ namespace GadeTask1
 					break;
 			}
 		}
+
+		public abstract override ToString()
+		{
+
+		}
+
 	}
 }

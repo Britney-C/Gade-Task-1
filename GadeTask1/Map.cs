@@ -15,7 +15,7 @@ namespace GadeTask1
 
         protected Tile[,] mapArray = new Tile[10, 10];
         protected Enemy[] numEnemies;
-        protected Hero newHero = new Hero();
+        protected Hero newHero;
         protected int mapWidth;
         protected int mapHeight;
         protected Random random = new Random();
@@ -28,7 +28,7 @@ namespace GadeTask1
             mapArray = new Tile[mapWidth, mapHeight];
             numEnemies = new Enemy[(mapWidth + mapHeight) / 3];
             UpdateVision();
-            newHero = Create();
+            newHero = (Hero)Create(type: Tile.TileType.Hero);
         }
 
         public void UpdateVision()
@@ -39,23 +39,23 @@ namespace GadeTask1
         private Tile Create(Tile.TileType type)
         {
             Tile tempTile = null;
+            int randomX = random.Next(1, mapWidth);
+            int randomY = random.Next(1, mapHeight);
+
             switch (type)
             {
                 case Tile.TileType.Hero:
                     tempTile = new Hero();
                     break;
                 case Tile.TileType.Enemy:
-                    tempTile = new Enemy();
+                    tempTile = new Goblin(randomX, randomY);
                     break;
                 case Tile.TileType.Gold:
                     break;
                 case Tile.TileType.Weapon:
                     break;
-
             }
-
-            int randomX = random.Next(mapWidth);
-            int randomY = random.Next(mapHeight);
+            mapArray[randomX, randomY] = tempTile;
             return tempTile;
         }
     }
