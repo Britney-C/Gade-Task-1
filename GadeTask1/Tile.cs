@@ -4,6 +4,7 @@ using System.Text;
 
 namespace GadeTask1
 {
+	//Question 2.1
 	abstract class Tile
 	{
 		protected int X { get; set; }
@@ -17,6 +18,7 @@ namespace GadeTask1
 			Weapon = 3
 		}
 
+		//Constructor that recieves and sets inital values for the variables. THis exists to border the map with obstacles that the player can't move past.
 		public Tile()
 		{
 			X = 0;
@@ -31,25 +33,25 @@ namespace GadeTask1
 			weapon = (char)TileType.Weapon;
 		}
 
+		//Subclass that calls the bass class's constructor with X and Y paramenters
 		 class Obstacle : Tile
 		{
-			public Obstacle(int xPosition, int yPosition, char symbol)
+			public Obstacle(int xPosition, int yPosition) : base()
 			{
-				xPosition = base.X;
-				yPosition = base.Y;
+				base.X = xPosition;
+				base.Y = yPosition;
 			}
 		}
 
+		//Identical to Obstacle, but exisits to denote an empty tile
 		public class EmptyTile : Tile
 		{
-			public EmptyTile(int xPosition, int yPosition)
+			public EmptyTile(int xPosition, int yPosition) : base()
 			{
-				Console.WriteLine(".");
-
-				xPosition = base.X;
-				yPosition = base.Y;
+				base.X = xPosition;
+				base.Y = yPosition;
 			}
 		}
 	}
 }
-}
+
